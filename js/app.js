@@ -1,5 +1,5 @@
 var params = getHashParams(),
-    mode = "webrtc",
+    mode = typeof (params.mode) == 'undefined' ? 'webrtc' : params.mode,
     username,
     password,
     application_name = 'teren',
